@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form action="join.jsp" method="post">
+
+<table border width="400">
+<tr>
+	<td colspan=2 bgcolor="#A3A3A3"><b>Step1 : 아이디/비번 입력</b></td>
+</tr>
+<tr>
+	<td>아이디: </td>
+	<td><input type="text" name="id"></td>
+</tr>
+<tr>
+	<td>비밀번호: </td>
+	<td><input type="password" name="pwd"></td>
+</tr>
+<tr>
+	<td>비밀번호 확인: </td>
+	<td><input type="password" name="pwdCf"></td>
+</tr>
+
+<tr><td colspan=2 bgcolor="#A3A3A3"><b>Step2 : 개인정보</b></td></tr>
+<tr><td>성별: </td><td><input type="radio" name="gender" value="남성">남자
+<input type="radio" name="gender" value="여성">여자</td></tr>
+<tr><td>혈액형: </td>
+<td><select name="blood" >
+<option value="A형">A형
+<option> B형
+<option> AB형
+<option> O형
+</select>
+</td></tr>
+<tr><td>생일:</td> <td><input type="date" name="birth"></td></tr>
+
+<tr><td colspan=2 bgcolor="#A3A3A3"><b>Step3 : 선호도</b></td></tr>
+<tr><td>취미:</td><td><input type="checkbox" name="hobby" value="축구">축구
+<input type="checkbox" name="hobby" value="야구">야구
+<input type="checkbox" name="hobby" value="농구">농구
+</td></tr>
+<tr><td>좋아하는 색깔 </td><td><input type="color" name="color"></td></tr>
+
+<tr><td colspan=2 bgcolor="#A3A3A3"><b>Step4 : 하고 싶은 말</b></td></tr>
+<tr><td colspan=2><textarea name = "memo" rows="3" cols="50"></textarea></td></tr>
+
+</table>
+
+<input type="submit" value="제출">
+<input type="reset" value="초기화"><br>
+</form>
+
+</body>
+</html>
